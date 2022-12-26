@@ -1,0 +1,145 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+}
+header{
+    width: 100vw;
+    background-color: #090F1B;
+    display: flex;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 0.7vw;
+}
+h1{
+    font-size: 3vw;
+    color: white;
+    text-transform: capitalize;
+    width: 44vw;
+    margin-left: 1.5vw;
+    letter-spacing: 0.3vw;
+}
+span{
+    color: rgb(91, 212, 133);
+}
+.buttons{
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly ;
+}
+.buttons a{
+    font-size: 2vw;
+    width: 13vw;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+a:hover{
+    background-color: rgb(91, 212, 133);
+    padding-left: 5vw;
+    padding-right: 5vw;
+    border-radius: 20px;
+}
+body{
+    background-color: rgb(91, 212, 133);
+}
+main{
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-top: 8vw;
+}
+p{
+    color: white;
+    text-transform: uppercase;
+    margin-left: 3vw;
+    font-family: 'Gill Sans', 'Gill Sans MT','Trebuchet MS', sans-serif;
+}
+.bolder{
+    width: 100%;
+    font-size: 5vw;
+    font-weight: bold;
+    font-family: 'Segoe UI';
+}
+.box1{
+    display: flex;
+    justify-content: center;
+    width: 54vw;
+    font-size: 4.5vw;
+    background-color: #090F1B;
+    font-family: 'Segoe UI';
+}
+.text{
+    width: 100%;
+    font-size: 4.5vw;
+}
+#Capa_1{
+    width: 5vw;
+    display: none;
+    
+}
+
+
+@media (min-width: 425px) and (max-width:826px){
+    header{
+        flex-direction: column;
+        align-items: center;
+    }
+    h1{
+        margin-left: 25vw;
+        padding: 0.8vw;
+        width: 50vw;
+    }
+    .buttons a{
+        padding: 0.5vw;
+    }
+    #Capa_1{
+        display: none;
+    }
+}
+
+
+@media (min-width: 250px) and (max-width:424px){
+    header{
+        flex-direction: column;
+        display: block;
+    }
+    h1{
+        display: inline-block;
+        padding: 0.8vw;
+    }
+    .buttons {
+        padding: 0.5vw;
+        flex-direction: column ;
+        align-items: center;
+    }
+    .buttons a{
+        margin: 2vw;
+    }
+    a:hover{
+        background-color: rgb(91, 212, 133);
+        padding-left: 45vw;
+        padding-right: 45vw;
+        border-radius: 20px;
+    }
+    #Capa_1{
+        display:inline;
+        position: absolute;
+        top: 1vw;
+        right: 7vw;
+    }
+    main{
+        display: grid;
+        width: 100vw;
+        height: 18vh;
+        justify-content: center;
+    }
+}
